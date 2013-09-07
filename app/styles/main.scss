@@ -1,0 +1,37 @@
+@import 'sass-bootstrap/bootstrap';
+@import 'darkstrap/darkstrap';
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 500px;
+}
+
+.timer input {
+    @extend h1;
+    width: 68px;
+    height: 63px;
+}
+
+.timer .timer-output {
+    @extend h1;
+    height: 63px;
+    margin-bottom: 10px;
+}
+
+.timer .timer-output .hh-mm-ss {
+    float: left;
+    margin-right: 10px;
+}
+
+.timer .timer-output .ms-animation {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    background-color: #0088CC;
+    float: left;
+    top: 100%;
+}
+
+.timer .timer-tally {
+    @extend h1;
+}

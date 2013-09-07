@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="lib/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"></div>
+
+    <script src="lib/mocha/mocha.js"></script>
+    <script src="../app/bower_components/requirejs/require.js"></script>
+    <script data-cover-only="//(allTests|model)/" data-cover-adapter="../app/bower_components/blanket/src/adapters/mocha-blanket.js" data-cover-timeout="10000" src="../app/bower_components/blanket/dist/qunit/blanket.min.js"></script>
+
+    <script src="../.tmp/test/requireConfig.js"></script>
+    <script type="text/javascript" src="../.tmp/test/allTests.js"></script>
+    <script type="text/javascript">
+        mocha.setup({ui: 'bdd', ignoreLeaks: true});
+        mocha.run();
+    </script>
+</body>
+</html>
